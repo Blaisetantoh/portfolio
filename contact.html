@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            padding: 30px;
+            /* margin: 20px; */
+            background-color: #558fda;
+            box-shadow:2px 2px 4px #333 ;
+
+        }
+        .navbar{
+            float: right;
+            
+        }
+
+        .lang{
+            text-decoration: none;
+            font-size: 18px;
+            font-family: sans-serif;
+            padding: 15px;
+            font-weight: bold; 
+            color: rgb(27, 26, 26) ;
+            transition: 380ms ease-in-out;
+        }
+
+        .lang:hover{
+            /* background-color: rgb(54, 53, 53); */
+            text-decoration: underline;
+            color: rgb(134, 132, 132); 
+
+            border-radius: 8px;
+            padding: 10px;
+            
+        }
+        span{
+            font-size: 30px;
+            color: rgb(53, 63, 63);
+            text-shadow: 5px 5px 5px rgb(75, 72, 72) ;
+            font-weight: bold;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 30px auto;
+            padding: 25px 30px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(60, 60, 60, 0.12);
+            gap: 15px;
+        }
+
+        .contact-form label {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+            font-family: inherit;
+            transition: border-color 0.2s;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #a58c8c;
+            outline: none;
+        }
+
+        .contact-form button {
+            background: #264994;
+            color: #fff;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .contact-form button:hover {
+            background: #2a8a7d;
+        }
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #f9f6f6;
+            border-radius: 14px;
+            box-shadow: 0 4px 16px rgba(60, 60, 60, 0.10);
+        }
+
+        main h2 {
+            font-size: 28px;
+            color: #5a4a4a;
+            margin-bottom: 18px;
+            font-family: 'Segoe UI', sans-serif;
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 18px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: #b7becc;
+            font-size: 18px;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .social-links a:hover {
+            color: #2c7e4e;
+        }
+        .social-links img {
+            width: 28px;
+            height: 28px;
+            vertical-align: middle;
+            margin-left: 4px;
+            transition: transform 0.2s, filter 0.2s;
+        }
+
+        .social-links a[href*="whatsapp"] img {
+            filter: invert(36%) sepia(94%) saturate(749%) hue-rotate(88deg) brightness(92%) contrast(92%);
+        }
+
+        .social-links a[href*="facebook"] img {
+            filter: invert(34%) sepia(99%) saturate(749%) hue-rotate(185deg) brightness(92%) contrast(92%);
+        }
+
+        .social-links a[href*="github"] img {
+            filter: invert(12%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+        }
+
+        .social-links a[href*="linkedin"] img {
+            filter: invert(41%) sepia(98%) saturate(749%) hue-rotate(175deg) brightness(92%) contrast(92%);
+        }
+
+        .social-links a[href*="instagram"] img {
+            filter: invert(53%) sepia(79%) saturate(749%) hue-rotate(316deg) brightness(92%) contrast(92%);
+        }
+
+        .social-links a:hover img {
+            transform: scale(1.15) rotate(-6deg);
+            filter: brightness(1.2) drop-shadow(0 2px 8px rgba(165,140,140,0.18));
+        }
+         .footer {
+               text-align: center;
+                padding: 30px 0;
+                background: #242525;
+                color: #fff;
+                font-family: Arial, Helvetica, sans-serif;
+                /* border-radius: 0 0 18px 18px; */
+                font-size: 1.2rem;
+                margin-top: 24px;
+                width: 80%;
+                margin-left: 120px ;
+                box-shadow: 0 -2px 8px rgba(60, 60, 60, 0.08);
+            }
+            .footer p {
+                margin: 0;
+                letter-spacing: 0.5px;
+            }
+        @media screen and (max-width: 600px) {
+             header {
+                padding: 15px;
+                text-align: start;
+            }
+            .navbar {
+                float: none;
+                display: block;
+                margin-top: 10px;
+            }
+            .lang {
+                display: block;
+                padding: 10px 0;
+                font-size: 16px;
+            }
+            span {
+                font-size: 22px;
+            }
+            main {
+                max-width: 98vw;
+                margin: 18px auto;
+                padding: 10px;
+            }
+            .contact-form {
+                max-width: 98vw;
+                padding: 15px 8px;
+                gap: 10px;
+            }
+            .contact-form label,
+            .contact-form input,
+            .contact-form textarea,
+            .contact-form button {
+                font-size: 15px;
+            }
+            .social-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            .social-links a {
+                font-size: 16px;
+            }
+            .social-links img {
+                width: 22px;
+                height: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+        <header>
+        <span>Portfolio</span>
+        <nav class="navbar">
+            <a class="lang" href="home.html">Home</a>
+            <a class="lang" href="about.html">About</a>
+            <a class="lang"  href="service.html">Services</a>
+            <a class="lang" href="portfolio.html">Portfolio</a>
+            <a class="lang" href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Contact Me</h2>
+            <form action="#" method="post" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <section>
+            <h2>Connect with me</h2>
+            <div class="social-links">
+             <a href="wa.me/651270710" >Whatsapp <img src="images/whatsapp.svg" alt=""></a>
+
+            <a href="https://facebook.com/Blaise Brizzy">Facebook<img src="images/facebook.svg" alt="Facebook Icon">
+        </a>
+        <a href="https://github.com/" >GitHub <img src="images/github.svg" alt=""></a>
+     <a href="https://linkedIn.com/Blaise Tant">LinkedIn<img src="images/linkedin.svg" alt="LinkedIn Icon"> </a>
+        </a>
+     <a href="https://Instagram.com/Blaise Brizzy"> Instagram<img src="images/instagram.svg" alt=""> </a>
+            
+            </div>
+        </section>
+    </main>
+     <footer class="footer">
+            <p>&copy; 2025 Dev Blaise Portfolio. All rights reserved.</p>
+        </footer>
+</body>
+</html>

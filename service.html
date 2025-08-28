@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            padding: 30px;
+            /* margin: 20px; */
+            background-color:  #558fda;
+            box-shadow:2px 2px 6px #333 ;
+
+        }
+        .navbar{
+            float: right;
+            
+        }
+
+        .lang{
+            text-decoration: none;
+            font-size: 18px;
+            font-family: sans-serif;
+            padding: 15px;
+            font-weight: bold; 
+            color: rgb(27, 26, 26) ;
+            transition: 380ms ease-in-out;
+        }
+
+        .lang:hover{
+            /* background-color: rgb(54, 53, 53); */
+            text-decoration: underline;
+            color: rgb(134, 132, 132); 
+
+            border-radius: 8px;
+            padding: 10px;
+            
+        }
+        span{
+            font-size: 30px;
+            color: rgb(53, 63, 63);
+            text-shadow: 5px 5px 5px rgb(75, 72, 72) ;
+            font-weight: bold;
+        }
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .skill-card {
+        background: #f7ebeb;
+        box-shadow: 2px 2px 8px #ccc;
+        border-radius: 10px;
+        padding: 30px 20px;
+        width: 300px;
+        text-align: center;
+        transition: box-shadow 0.3s;
+    }
+    .skill-card:hover {
+        box-shadow: 4px 4px 16px #aaa;
+    }
+    .skill-card h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+        color: #353f3f;
+    }
+    .skill-card p {
+        font-size: 16px;
+        color: #444;
+    }
+     .footer {
+                text-align: center;
+                padding: 30px 0;
+                background: #242525;
+                color: #fff;
+                font-family: Arial, Helvetica, sans-serif;
+                /* border-radius: 0 0 18px 18px; */
+                font-size: 1.2rem;
+                margin-top: 24px;
+                width: 80%;
+                margin-left: 120px ;
+                box-shadow: 0 -2px 8px rgba(60, 60, 60, 0.08);
+            }
+            .footer p {
+                margin: 0;
+                letter-spacing: 0.5px;
+            }
+    @media screen and (max-width: 900px) {
+        .skills-container {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .skill-card {
+            width: 90%;
+            padding: 20px 10px;
+        }
+         header {
+                padding: 15px;
+                text-align: start;
+            }
+            .navbar {
+                float: none;
+                display: block;
+                margin-top: 10px;
+            }
+            .lang {
+                display: block;
+                padding: 10px 0;
+                font-size: 16px;
+            }
+    }
+    </style>
+</head>
+<body>
+        <header>
+        <span>Portfolio</span>
+        <nav class="navbar">
+            <a class="lang" href="home.html">Home</a>
+            <a class="lang" href="about.html">About</a>
+            <a class="lang"  href="service.html">Services</a>
+            <a class="lang" href="portfolio.html">Portfolio</a>
+            <a class="lang" href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <h2>Web Development</h2>
+                    <p>Building responsive and dynamic websites using HTML, CSS, and JavaScript to deliver seamless user experiences.</p>
+                </div>
+                <div class="skill-card">
+                    <h2>Frontend Frameworks</h2>
+                    <p>Expertise in React and Angular for creating interactive and scalable web applications.</p>
+                </div>
+                <div class="skill-card">
+                    <h2>Backend Development</h2>
+                    <p>Developing robust server-side applications with Node.js and Express, ensuring secure and efficient data handling.</p>
+                </div>
+                <div class="skill-card">
+                    <h2>UI/UX Design</h2>
+                    <p>Designing intuitive interfaces and user flows to enhance usability and engagement.</p>
+                </div>
+                <div class="skill-card">
+                    <h2>Database Management</h2>
+                    <p>Managing data with SQL and NoSQL databases, optimizing queries and ensuring data integrity.</p>
+                </div>
+                <div class="skill-card">
+                    <h2>Version Control</h2>
+                    <p>Using Git and GitHub for collaborative development and efficient code management.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+            <p>&copy; 2025 Dev Blaise Portfolio. All rights reserved.</p>
+        </footer>
+    
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            padding: 30px;
+            /* margin: 20px; */
+            background-color: #558fda;
+            box-shadow:2px 2px 6px #333 ;
+
+        }
+        .navbar{
+            float: right;
+            
+        }
+
+        .lang{
+            text-decoration: none;
+            font-size: 18px;
+            font-family: sans-serif;
+            padding: 15px;
+            font-weight: bold; 
+            color: rgb(27, 26, 26) ;
+            transition: 380ms ease-in-out;
+        }
+
+        .lang:hover{
+            /* background-color: rgb(54, 53, 53); */
+            text-decoration: underline;
+            color: rgb(134, 132, 132); 
+
+            border-radius: 8px;
+            padding: 10px;
+            
+        }
+        span{
+            font-size: 30px;
+            color: rgb(53, 63, 63);
+            text-shadow: 5px 5px 5px rgb(75, 72, 72) ;
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 30px 40px;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(60, 60, 60, 0.12);
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        } 
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .project-card {
+            background: #f7ebeb;
+            box-shadow: 2px 2px 8px #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: box-shadow 0.3s;
+        }
+        .project-card:hover {
+            box-shadow: 4px 4px 12px #aaa;
+        }
+        .project-image {
+            width: 100%;
+            height: 200px;
+            background-color: #ddd;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+         .footer {
+             text-align: center;
+                padding: 30px 0;
+                background: #242525;
+                color: #fff;
+                font-family: Arial, Helvetica, sans-serif;
+                /* border-radius: 0 0 18px 18px; */
+                font-size: 1.2rem;
+                margin-top: 24px;
+                width: 80%;
+                margin-left: 120px ;
+                box-shadow: 0 -2px 8px rgba(60, 60, 60, 0.08);
+            }
+            .footer p {
+                margin: 0;
+                letter-spacing: 0.5px;
+            }
+        @media screen and (max-width: 700px) {
+            main {
+                padding: 16px 8px;
+                gap: 20px;
+            }
+            section {
+                flex-direction: column;
+                align-items: center;
+                gap: 16px;
+            }
+            .project-card {
+                width: 90%;
+                padding: 14px;
+            }
+             header {
+                padding: 15px;
+                text-align: start;
+            }
+            .navbar {
+                float: none;
+                display: block;
+                margin-top: 10px;
+            }
+            .lang {
+                display: block;
+                padding: 10px 0;
+                font-size: 16px;
+            }
+           
+        }
+
+    </style>
+</head>
+<body>
+        <header>
+        <span>Portfolio</span>
+        <nav class="navbar">
+            <a class="lang" href="home.html">Home</a>
+            <a class="lang" href="about.html">About</a>
+            <a class="lang"  href="service.html">Services</a>
+            <a class="lang" href="portfolio.html">Portfolio</a>
+            <a class="lang" href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section >
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <div class="project-image"> <img src="" alt=""></div>
+                <h2>Project One</h2>
+                <p>
+                    A web application for managing tasks efficiently. Features include user authentication, task categorization, and deadline reminders.
+                </p>
+            </div>
+            <!-- Project Card 2 -->
+            <div class="project-card">
+                <div class="project-image"><img src="" alt=""></div>
+                <h2>Project Two</h2>
+                <p>
+                Demi functional and responsive gas  delivery system with the objective to reduce the stress of customers or  individuals in getting gas to their various destination  by just oneclick “Place Order” and it’s get delivered at their door steps  with no  delay  and safe secure
+                </p>
+            </div>
+            <!-- Project Card 3 -->
+            <div class="project-card">
+                <div class="project-image"><img src="" alt=""></div>
+                <h2>Project Three</h2>
+                <p>
+                    A portfolio website showcasing creative works, including a gallery, blog, and contact form. Responsive design for all devices.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+            <p>&copy; 2025 Dev Blaise Portfolio. All rights reserved.</p>
+        </footer>
+</body>
+</html>

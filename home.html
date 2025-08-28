@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            padding: 30px;
+            /* margin: 20px; */
+            background-color: #558fda;
+            box-shadow:2px 2px 6px #333 ;
+
+        }
+        .navbar{
+            float: right;
+            
+        }
+
+        .lang{
+            text-decoration: none;
+            font-size: 18px;
+            font-family: sans-serif;
+            padding: 15px;
+            font-weight: bold; 
+            color: rgb(27, 26, 26) ;
+            transition: 380ms ease-in-out;
+        }
+
+        .lang:hover{
+            /* background-color: rgb(54, 53, 53); */
+            text-decoration: underline;
+            color: rgb(134, 132, 132); 
+
+            border-radius: 8px;
+            padding: 10px;
+            
+        }
+        span{
+            font-size: 30px;
+            color: rgb(53, 63, 63);
+            text-shadow: 5px 5px 5px rgb(75, 72, 72) ;
+            font-weight: bold;
+        }
+        .welcome{
+            margin: 24px;
+            line-height: 1.2;
+            margin-left: 50px;
+            /* margin-top: 50px; */
+        }
+        .cont{
+             display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        
+
+        .card{
+
+            background: white;
+            width: 350px;
+            line-height: 1.4;
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 4px 6px 10px rgba(0,0,0,0.1);
+            transition: 0.9s;
+            padding: 15px;
+        } 
+         .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 220px;
+            object-fit: cover;
+        }
+        .lern{
+            text-decoration: none;
+            font-size: 17px;
+            color: rgb(240, 230, 230);
+            background-color: green;
+            padding: 8px;
+            border-radius: 8px;
+            transition: 350ms ease-in-out;
+        }
+         .lern:hover{
+            background-color: transparent;
+            border: 1px solid black;
+             transform: translateY(-5px);
+            font-weight: bold;
+            color: #333;
+         }
+         .para{
+            font-size: 20px;
+            margin-top: 10px;
+            font-weight: bold;
+            color: rgb(90, 88, 88);
+            text-shadow: 3px 3px 6px  rgb(90, 88, 88);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.2;
+            max-width: 600px;
+
+         }
+
+         .hard{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            color: rgb(33, 32, 32);
+            text-shadow: 4px 4px 6px rgb(136, 134, 134);
+            font-weight: bold;
+         }
+        @media screen and (max-width: 768px) {
+            header {
+                padding: 15px;
+                text-align: start;
+            }
+            .navbar {
+                float: none;
+                display: block;
+                margin-top: 10px;
+            }
+            .lang {
+                display: block;
+                padding: 10px 0;
+                font-size: 16px;
+            }
+            .welcome {
+                margin: 16px;
+                margin-left: 0;
+                text-align: center;
+            }
+            .hard {
+                font-size: 22px;
+            }
+            .para {
+                font-size: 16px;
+                max-width: 100%;
+            }
+            .cont {
+                flex-direction: column;
+                align-items: center;
+                padding: 1rem;
+            }
+            .card {
+                width: 90%;
+                margin: 10px 0;
+                font-size: 16px;
+                padding: 10px;
+            }
+            .card img {
+                height: 160px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <span>Portfolio</span>
+        <nav class="navbar">
+            <a class="lang" href="home.html">Home</a>
+            <a class="lang" href="about.html">About</a>
+            <a class="lang"  href="service.html">Services</a>
+            <a class="lang" href="portfolio.html">Portfolio</a>
+            <a class="lang" href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="welcome">
+         <h1 class="hard">Welcome To</h1>
+            <h1 class="hard">My Portfolio</h1>
+            <h2 class="hard">Name: Dev Blaise</h2>
+            <p class="para">Aspiring software Engineer/Web developer</p>
+            <p class=" para">Building clean and responsive websites using <br> modern technologies.</p>
+
+    </div>
+<div class="cont">
+    <div class="card">
+        <h1>Status</h1>
+<p>
+     Hello! i am <strong>BLAISE TANTOH</strong> Professionally known as Dev Blaise a Year one student at <br> Yaounde international business school passionate about innovation</p>
+     <p>Familiar with some programming <br> languages HTML, CSS,JAVASCRIPT etc.</p>presently a holder of the CAP certificate, <br> O.level, and A.level in technical Education</p>
+    </div>
+      <div class="card">
+        <img src="images/d6b6646b-9971-4c95-bfa3-3c57fd23af6d.jpeg" alt="">
+        <h1>Dev Blaise</h1>
+        <a class="lern" href="about.html">Learn More</a>
+
+    </div>
+    </div>
+</body>
+</html>

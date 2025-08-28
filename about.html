@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            padding: 30px;
+            /* margin: 20px; */
+            background-color: #558fda;
+            box-shadow:2px 2px 6px #333 ;
+
+        }
+        .navbar{
+            float: right;
+            
+        }
+
+        .lang{
+            text-decoration: none;
+            font-size: 18px;
+            font-family: sans-serif;
+            padding: 15px;
+            font-weight: bold; 
+            color: rgb(27, 26, 26) ;
+            transition: 380ms ease-in-out;
+        }
+
+        .lang:hover{
+            /* background-color: rgb(54, 53, 53); */
+            text-decoration: underline;
+            color: rgb(134, 132, 132); 
+
+            border-radius: 8px;
+            padding: 10px;
+            
+        }
+        span{
+            font-size: 30px;
+            color: rgb(53, 63, 63);
+            text-shadow: 5px 5px 5px rgb(75, 72, 72) ;
+            font-weight: bold;
+        }
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px 40px;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(60, 60, 60, 0.12);
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            transition: box-shadow 0.4s, background 0.4s;
+        }
+
+        main:hover {
+            box-shadow: 0 8px 32px rgba(60, 60, 60, 0.18);
+            background: #f9f6f6;
+        }
+
+        .hip h1 {
+            font-size: 2.5rem;
+            color: #3a3a3a;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        .hip h1:hover {
+            color: #7c6e6e;
+        }
+
+        .card {
+            background: #f3eded;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 2px 8px rgba(120, 120, 120, 0.08);
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            background: #e9e3e3;
+            box-shadow: 0 4px 16px rgba(120, 120, 120, 0.13);
+        }
+
+        .intro {
+            font-size: 1.15rem;
+            color: #444;
+            line-height: 1.7;
+            transition: color 0.3s;
+        }
+
+        .intro:hover {
+            color: #222;
+        }
+
+        .skills, .education {
+            background: #f7f3f3;
+            border-radius: 10px;
+            padding: 20px 24px;
+            box-shadow: 0 1px 6px rgba(100, 100, 100, 0.07);
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+
+        .skills:hover, .education:hover {
+            background: #f0eaea;
+            box-shadow: 0 2px 12px rgba(100, 100, 100, 0.13);
+        }
+
+        .skills h2, .education h2 {
+            font-size: 1.4rem;
+            color: #5a5a5a;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+            transition: color 0.3s;
+        }
+
+        .skills h2:hover, .education h2:hover {
+            color: #8a7e7e;
+        }
+
+        .skills ul {
+            list-style: disc inside;
+            padding-left: 10px;
+            font-size: 1.08rem;
+            color: #555;
+            transition: color 0.3s;
+        }
+
+        .skills ul li {
+            margin-bottom: 7px;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .skills ul li:hover {
+            color: #333;
+            transform: translateX(8px);
+        }
+
+        .education p {
+            font-size: 1.08rem;
+            color: #555;
+            line-height: 1.6;
+            transition: color 0.3s;
+        }
+
+        .education p:hover {
+            color: #333;
+        }
+          .footer {
+                text-align: center;
+                padding: 30px 0;
+                background: #242525;
+                color: #fff;
+                font-family: Arial, Helvetica, sans-serif;
+                /* border-radius: 0 0 18px 18px; */
+                font-size: 1.2rem;
+                margin-top: 24px;
+                width: 80%;
+                margin-left: 120px ;
+                box-shadow: 0 -2px 8px rgba(60, 60, 60, 0.08);
+            }
+            .footer p {
+                margin: 0;
+                letter-spacing: 0.5px;
+            }
+        @media screen and (max-width: 600px) {
+            header {
+                padding: 18px;
+                text-align: start;
+            }
+            .navbar {
+                float: none;
+                display: block;
+                margin-top: 12px;
+            }
+            .lang {
+                display: block;
+                padding: 12px 0;
+                font-size: 17px;
+            }
+            main {
+                max-width: 98vw;
+                padding: 16px 8px;
+                gap: 20px;
+            }
+            .hip h1 {
+                font-size: 2rem;
+            }
+            .card, .skills, .education {
+                padding: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+        <header>
+        <span>Portfolio</span>
+        <nav class="navbar">
+            <a class="lang" href="home.html">Home</a>
+            <a class="lang" href="about.html">About</a>
+            <a class="lang"  href="service.html">Services</a>
+            <a class="lang" href="portfolio.html">Portfolio</a>
+            <a class="lang" href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="hip">
+        <h1>About Me</h1>
+        </div>
+        <div class="card">
+        <p class="intro">
+            Hello! I'm a passionate web developer with experience in building modern, responsive websites and applications. I enjoy solving problems, learning new technologies, and creating user-friendly digital experiences. My portfolio showcases a variety of projects that highlight my skills in HTML, CSS, JavaScript, and more.
+        </p>
+        </div>
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5, CSS3, JavaScript</li>
+                <li>Responsive Web Design</li>
+                <li>Frontend Frameworks (React, Vue)</li>
+                <li>Version Control (Git & GitHub)</li>
+                <li>UI/UX Principles</li>
+            </ul>
+        </section>
+        <section class="education">
+            <h2>Education</h2>
+            <p>
+                Software Engineering<br>
+                YIBS University, 2024/2025
+            </p>
+        </section>
+      
+        <style>
+          
+        </style>
+    </main>
+      <footer class="footer">
+            <p>&copy; 2025 Dev Blaise Portfolio. All rights reserved.</p>
+        </footer>
+</body>
+</html>
