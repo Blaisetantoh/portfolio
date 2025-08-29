@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Service page</title>
     <style>
           *{
             margin: 0;
@@ -42,11 +42,24 @@
             padding: 10px;
             
         }
-        span{
+                        
+.wrapper{
+      padding:1% ;
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 20px;
+      font-size: 1.6rem;
+}
+.por{
             font-size: 30px;
             color: rgb(53, 63, 63);
             text-shadow: 5px 5px 5px rgb(75, 72, 72) ;
             font-weight: bold;
+        }
+
+        .tete{
+            color: #558fda;
         }
     .skills-container {
         display: flex;
@@ -117,14 +130,22 @@
                 padding: 10px 0;
                 font-size: 16px;
             }
+                    
+        .footer {
+            width: 100%;
+            margin-left: 0;
+            font-size: 1rem;
+            padding: 20px 0;
+        }
+           
     }
     </style>
 </head>
 <body>
         <header>
-        <span>Portfolio</span>
+         <span class="por">Portfolio</span>
         <nav class="navbar">
-            <a class="lang" href="home.html">Home</a>
+            <a class="lang" href="index.html">Home</a>
             <a class="lang" href="about.html">About</a>
             <a class="lang"  href="service.html">Services</a>
             <a class="lang" href="portfolio.html">Portfolio</a>
@@ -132,6 +153,9 @@
         </nav>
     </header>
     <main>
+        <div class="wrapper">
+        <h1>Our <span class="tete">Services</span></h1>
+        </div>
         <section>
             <div class="skills-container">
                 <div class="skill-card">
